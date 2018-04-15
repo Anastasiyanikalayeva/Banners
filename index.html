@@ -1,0 +1,165 @@
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+	<div class="bannerPink">
+		<div class="bannerPink__inner">
+			<p class="bannerPink__title">Нужна учебная работа?<br><span class="line">Уникальность, качество и скорость гарантируем!</span></p>
+			<div class="bannerPink__row">
+				<select onchange="redirectOne();" id="select" class="bannerPink__select">
+						<option value="1">Реферат</option>
+						<option value="2">Курсовая</option>
+						<option value="3">Диплом</option>
+						<option value="4">Контрольная</option>
+						<option value="5">Другое</option>
+					</select>
+				<div class="bannerPink__column">
+					<input type="text" id="price" value="цена: от 500 руб." class="bannerPink__input" readonly="">
+					<input type="text" id="time" value="срок: 1-3 дней" class="bannerPink__input" readonly="">
+				</div>
+				<a target="_blank" href="https://www.napishem.ru/zakaz/referat.html?utm_source=allbest&utm_medium=banner&utm_campaign=pink_referat" class="bannerPink__button">Хочу заказать</a>
+			</div>
+		</div>
+	</div>
+  <div class="bannerBlue">
+
+    <div class="bannerBlue__inner">
+      <p class="bannerBlue__title">Нету времени делать домашки? <span class="line">Мы поможем!</span></p>
+      <div class="bannerBlue__row">
+        <select onchange="redirectTwo();" id="selectTwo" class="bannerBlue__select">
+            <option value="1">Реферат</option>
+            <option value="2">Курсовая</option>
+            <option value="3">Диплом</option>
+            <option value="4">Контрольная</option>
+            <option value="5">Другое</option>
+          </select>
+        <div class="bannerBlue__column">
+          <input type="text" id="priceTwo" value="цена: от 500 руб." class="bannerBlue__input" readonly="">
+          <input type="text" id="timeTwo" value="срок: 1-3 дней" class="bannerBlue__input" readonly="">
+        </div>
+        <a target="_blank" href="https://www.napishem.ru/zakaz/referat.html?utm_source=allbest&utm_medium=banner&utm_campaign=blue_referat" class="bannerBlue__button">Хочу заказать</a>
+      </div>
+    </div>
+  </div>
+  <div class="bannerYellow">
+    <div class="bannerYellow__inner">
+      <p class="bannerYellow__title">Учеба занимает все свободное время?<br><span class="line">Мы напишем за тебя!</span></p>
+      <div class="bannerYellow__row">
+        <select onchange="redirectThree();" id="selectThree" class="bannerYellow__select">
+            <option value="1">Реферат</option>
+            <option value="2">Курсовая</option>
+            <option value="3">Диплом</option>
+            <option value="4">Контрольная</option>
+            <option value="5">Другое</option>
+          </select>
+        <div class="bannerYellow__column">
+          <input type="text" id="priceThree" value="цена: от 500 руб." class="bannerYellow__input" readonly="">
+          <input type="text" id="timeThree" value="срок: 1-3 дней" class="bannerYellow__input" readonly="">
+        </div>
+        <a target="_blank" href="https://www.napishem.ru/zakaz/referat.html?utm_source=allbest&utm_medium=banner&utm_campaign=yellow_referat" class="bannerYellow__button">Хочу заказать</a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+          function redirectOne(){
+            value = document.getElementById('select').value;
+      			switch (value) {
+      				case '1':
+      					$('#price').val("цена: от 500 руб.");
+      					$('#time').val("срок: 1-3 дня");
+      					$('.bannerPink__button').attr('href', 'https://www.napishem.ru/zakaz/referat.html?utm_source=allbest&utm_medium=banner&utm_campaign=pink_referat');
+      					break;
+      				case '2':
+      					$('#price').val("цена: от 1200 руб.");
+      					$('#time').val("срок: 2-5 дней");
+      					$('.bannerPink__button').attr('href', 'https://www.napishem.ru/zakaz/kursovaja.html?utm_source=allbest&utm_medium=banner&utm_campaign=pink_kursovaja');
+      					break;
+      				case '3':
+      					$('#price').val("цена: от 6000 руб.");
+      					$('#time').val("срок: от 5 дней");
+      					$('.bannerPink__button').attr('href', 'https://www.napishem.ru/zakaz/diplom.html?utm_source=allbest&utm_medium=banner&utm_campaign=pink_diplom');
+      					break;
+      				case '4':
+      					$('#price').val("цена: от 600 руб.");
+      					$('#time').val("срок: 1-3 дня");
+      					$('.bannerPink__button').attr('href', 'https://www.napishem.ru/zakaz/kontrolnaya.html?utm_source=allbest&utm_medium=banner&utm_campaign=pink_kontrolnaya');
+      					break;
+      				case '5':
+      					$('#price').val("цена: от 300 руб.");
+      					$('#time').val("срок: 1-3 дня");
+      					$('.bannerPink__button').attr('href', 'https://www.napishem.ru/?utm_source=allbest&utm_medium=banner&utm_campaign=pink_drugoe');
+      			}
+      		}
+          function redirectTwo(){
+            value = document.getElementById('selectTwo').value;
+      			switch (value) {
+      				case '1':
+      					$('#priceTwo').val("цена: от 500 руб.");
+      					$('#timeTwo').val("срок: 1-3 дня");
+      					$('.bannerBlue__button').attr('href', 'https://www.napishem.ru/zakaz/referat.html?utm_source=allbest&utm_medium=banner&utm_campaign=blue_referat');
+      					break;
+      				case '2':
+      					$('#priceTwo').val("цена: от 1200 руб.");
+      					$('#timeTwo').val("срок: 2-5 дней");
+      					$('.bannerBlue__button').attr('href', 'https://www.napishem.ru/zakaz/kursovaja.html?utm_source=allbest&utm_medium=banner&utm_campaign=blue_kursovaja');
+      					break;
+      				case '3':
+      					$('#priceTwo').val("цена: от 6000 руб.");
+      					$('#timeTwo').val("срок: от 5 дней");
+      					$('.bannerBlue__button').attr('href', 'https://www.napishem.ru/zakaz/diplom.html?utm_source=allbest&utm_medium=banner&utm_campaign=blue_diplom');
+      					break;
+      				case '4':
+      					$('#priceTwo').val("цена: от 600 руб.");
+      					$('#timeTwo').val("срок: 1-3 дня");
+      					$('.bannerBlue__button').attr('href', 'https://www.napishem.ru/zakaz/kontrolnaya.html?utm_source=allbest&utm_medium=banner&utm_campaign=blue_kontrolnaya');
+      					break;
+      				case '5':
+      					$('#priceTwo').val("цена: от 300 руб.");
+      					$('#timeTwo').val("срок: 1-3 дня");
+      					$('.bannerBlue__button').attr('href', 'https://www.napishem.ru/?utm_source=allbest&utm_medium=banner&utm_campaign=blue_drugoe');
+      			}
+      		}
+          function redirectThree(){
+            value = document.getElementById('selectThree').value;
+      			switch (value) {
+      				case '1':
+      					$('#priceThree').val("цена: от 500 руб.");
+      					$('#timeThree').val("срок: 1-3 дня");
+      					$('.bannerYellow__button').attr('href', 'https://www.napishem.ru/zakaz/referat.html?utm_source=allbest&utm_medium=banner&utm_campaign=yellow_referat');
+      					break;
+      				case '2':
+      					$('#priceThree').val("цена: от 1200 руб.");
+      					$('#timeThree').val("срок: 2-5 дней");
+      					$('.bannerYellow__button').attr('href', 'https://www.napishem.ru/zakaz/kursovaja.html?utm_source=allbest&utm_medium=banner&utm_campaign=yellow_kursovaja');
+      					break;
+      				case '3':
+      					$('#priceThree').val("цена: от 6000 руб.");
+      					$('#timeThree').val("срок: от 5 дней");
+      					$('.bannerYellow__button').attr('href', 'https://www.napishem.ru/zakaz/diplom.html?utm_source=allbest&utm_medium=banner&utm_campaign=yellow_diplom');
+      					break;
+      				case '4':
+      					$('#priceThree').val("цена: от 600 руб.");
+      					$('#timeThree').val("срок: 1-3 дня");
+      					$('.bannerYellow__button').attr('href', 'https://www.napishem.ru/zakaz/kontrolnaya.html?utm_source=allbest&utm_medium=banner&utm_campaign=yellow_kontrolnaya');
+      					break;
+      				case '5':
+      					$('#priceThree').val("цена: от 300 руб.");
+      					$('#timeThree').val("срок: 1-3 дня");
+      					$('.bannerYellow__button').attr('href', 'https://www.napishem.ru/?utm_source=allbest&utm_medium=banner&utm_campaign=yellow_drugoe');
+      			}
+      		}
+          </script>
+      		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      		<script src="main.js"></script>
+      	</body>
+      </html>
